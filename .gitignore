@@ -162,3 +162,16 @@ data/registered-business-locations-san-francisco.csv
 data/sf_businesses.json
 data/sf_appscans.parquet.gzip
 data/sf_fakedataset.json
+
+# local ignore
+.idea
+/.idea
+.idea/.gitignore
+.idea/Elasticsearch-Log-Analysis.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+data
