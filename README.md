@@ -22,6 +22,12 @@ memory=4GB   # Limits VM memory in WSL 2 up to 4GB
 ## Enter in WSL before Start
 sudo sysctl -w vm.max_map_count=262144
 
+## Create the parquet file
+
+To create the parquet file as a zip file, install the fastparquet library
+
+pip install fastparquet
+
 ## Use parquet loader for elasticsearch
 install the loader
 pip install elasticsearch-loader[parquet]

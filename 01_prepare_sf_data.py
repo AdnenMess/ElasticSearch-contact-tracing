@@ -5,7 +5,6 @@ import pandas as pd
 from numpy import NaN
 
 my_dir = Path.cwd() / 'data'
-print(my_dir)
 
 
 def my_convert_json(value):
@@ -65,4 +64,4 @@ ex_df = sf_data.rename(columns={
 # print(ex_df.dtypes)
 print(ex_df)
 
-ex_df.to_json('./data/sf_businesses.json', lines=True, orient='records')
+ex_df.to_json(my_dir / 'sf_businesses.json', lines=True, orient='records')
