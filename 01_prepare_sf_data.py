@@ -21,7 +21,7 @@ converter = {"Business Location": lambda x: x.replace("\'", "\"")}
 in_df = pd.read_csv(my_dir / 'registered-business-locations-san-francisco.csv', converters=converter)
 
 # convert the business location into json otherwise the normalization later will not work
-in_df['Business Location'] = in_df['Business Location'].map(lambda x: my_convert_json(x))
+in_df['Business Location'] = in_df['Business Location'].folium_map(lambda x: my_convert_json(x))
 
 # filter out not needed columns otherwise dataframe will be empty after filter
 filtered_df = in_df[['Location Id', 'DBA Name', 'Street Address', 'City', 'Source Zipcode', 'Business Location']]
